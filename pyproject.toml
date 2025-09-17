@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "model_clf"
+version = "0.1.1"
+description = "A flexible classification training module with SHAP and ROC analysis"
+authors = [
+    { name="wangwei", email="wangwei@siat.ac.cn" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "jupyter",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "shap",
+    "xgboost",
+    "lightgbm",
+    "catboost"
+    
+]
+
+[tool.setuptools]
+packages = ["model_clf"]
+include-package-data = true
